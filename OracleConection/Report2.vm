@@ -1,0 +1,28 @@
+   <HTML>
+    <HEAD>
+      <TITLE> Randuri selectate </TITLE>
+	  <BR></BR>
+    </HEAD>
+    <BODY>
+      <CENTER>
+	  <B> $select </B>
+	   <BR></BR>
+      <B> $tabel.size() randuri selectate </B>
+       <BR></BR>
+	<CENTER>
+      <TABLE style="width:75%">
+        #foreach( $rand in $tabel )
+          <TR>
+		   #foreach( $null in $rand )
+            <TD>$null</TD>
+		   #end
+          </TR>
+        #end
+      </TABLE>
+	  </CENTER>
+      <BR/>
+ 
+    </BODY>
+  </HTML>
+  
+  

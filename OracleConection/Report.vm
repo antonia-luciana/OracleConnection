@@ -1,0 +1,27 @@
+   <HTML>
+    <HEAD>
+      <TITLE>Cuvinte valide</TITLE>
+    </HEAD>
+    <BODY>
+      <CENTER>
+      <B>$fav.size() cuvinte valide</B>
+    
+      #set( $count = 1 )  
+      <TABLE>
+        #foreach( $file in $fav )
+          <TR>
+            <TD>$count)</TD>
+            <TD>$file</TD>
+
+          </TR>
+          #set( $count = $count + 1 )
+        #end
+      </TABLE>
+      <BR/>
+      <I>End</I>
+      </CENTER>
+ 
+    </BODY>
+  </HTML>
+  
+  
